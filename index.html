@@ -48,11 +48,10 @@
        <div class="news"><h2>News</h></div>
 
         <div class="discord"><u><br>I left discord</u>
-            <div class="discord-text">I finally did it-- I've wanted to do it for a long time. Truthfully, I couldn't give you a good reason as to why I did it... I think it's just me wanting to be an elitist. Pathetic, really, but I'm content with my decision, and that's all that matters, so I don't mind.<br><br> Anyway, from now on, the more conventional way to get in touch with me would probably be by email. My preferred messaging technology is XMPP, but I do use matrix, the FOSS alternative to discord. <br><br> I sent the URL to this website to all of my discord contacts before I deleted my account. If you're from there, I welcome you to my website!<br> I like to keep it minimal ^^  <div class=date><align= right> 2022-06-28</div></div><br></div>
-        </div>
+        <div class="discord-text">I finally did it-- I've wanted to do it for a long time. Truthfully, I couldn't give you a good reason as to why I did it... I think it's just me wanting to be an elitist. Pathetic, really, but I'm content with my decision, and that's all that matters, so I don't mind.<br><br> Anyway, from now on, the more conventional way to get in touch with me would probably be by email. My preferred messaging technology is XMPP, but I do use matrix, the FOSS alternative to discord. <br><br> I sent the URL to this website to all of my discord contacts before I deleted my account. If you're from there, I welcome you to my website!<br> I like to keep it minimal ^^  <div class=date><align= right> 2022-06-28</div></div><br></div>
+    </div>
     
-
-
+        <div id="disqus_thread"></div>
 
 
 
@@ -63,6 +62,14 @@
 </html>
 
 <style>
+
+    div.disqus_thread {
+
+        float:right;
+        padding-top: 50%;
+        width: 15%;
+    }
+
     div.date {
         font-size: x-small;
         font-family: Noto Sans;
@@ -146,5 +153,25 @@
 
     </style>
 <script>
-screen.orientation.lock('landscape');
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+     
+      var disqus_config = function () {
+     this.page.url = window.location.href;  // Replace PAGE_URL with your page's canonical URL variable
+     this.page.identifier = this.page.url; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+     };
+    
+   
+    
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://merulox.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
 </script>
+
+
+
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
