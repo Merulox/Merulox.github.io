@@ -44,15 +44,15 @@
     </div>
 
 
-    <div class="blog">
+    <div class="blog-wrapper">
+        <div class="blog">
        <div class="news"><h2>News</h></div>
 
         <div class="discord"><u><br>I left discord</u>
         <div class="discord-text">I finally did it-- I've wanted to do it for a long time. Truthfully, I couldn't give you a good reason as to why I did it... I think it's just me wanting to be an elitist. Pathetic, really, but I'm content with my decision, and that's all that matters, so I don't mind.<br><br> Anyway, from now on, the more conventional way to get in touch with me would probably be by email. My preferred messaging technology is XMPP, but I do use matrix, the FOSS alternative to discord. <br><br> I sent the URL to this website to all of my discord contacts before I deleted my account. If you're from there, I welcome you to my website!<br> I like to keep it minimal ^^  <div class=date><align= right> 2022-06-28</div></div><br></div>
-    </div>
-
-
-
+        </div>
+        <div><font color=white>|</div>
+        <div class="disqus2">
     <div class="disqus-panel">
         <h1></h1>
     <div id = spoiler-disqus style="display: none">
@@ -60,6 +60,14 @@
     </div>
     <div class=button><align=center><button title="Comments" type="button" onclick="if(document.getElementById('spoiler-disqus') .style.display=='none' ) {document.getElementById('spoiler-disqus') .style.display=''}else{document.getElementById('spoiler-disqus') .style.display='none'}">Show/Hide disqus</button></align></div>
     </div>
+
+        </div>
+    </div>
+    
+
+    
+
+
 </body>
 
 
@@ -67,8 +75,16 @@
 </html>
 
 <style>
+    div.disqus2 {
+        border: 2px solid rgb(255, 255, 255);
+        text-align: center;
+        width: 100%;
+        float:right;
+        bottom: 50%;
+        position: relative;
+        background-color: rgba(0,0,0, 0.4);
+    }
     div.button {
-        position: fixed;
         bottom: 0%;
         text-align: center;
     }
@@ -77,7 +93,7 @@
        float: none;
        color: yellow;
        text-align: center;
-       padding-top: 70%;
+       padding-top: 60%;
     }
     div.disqus_thread {
 
@@ -106,9 +122,18 @@
     div.blog {
         border: 2px solid rgb(255, 255, 255);
         text-align: center;
+        width: 100%;
+        float:right;
+        right:auto;
+        position:relative;
+        background-color: rgba(0,0,0, 0.4);
+    }
+    div.blog-wrapper {
+        text-align: center;
         width: 15%;
         float:right;
-        background-color: rgba(0,0,0, 0.4);
+        right:auto;
+        position:relative;
     }
     div.news {
         font-family: Noto Sans;
