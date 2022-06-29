@@ -64,10 +64,14 @@
         </div>
     </div>
     
-
-    
-
-
+<div class="lastfmpanel"
+<script type="text/template" id="lastFmWidget">
+	<div>{ track.artist }</div>
+	<div>{ track.title }</div>
+	<div>{ track.album }</div>
+	<img src="{ track.image.medium }">
+</script>
+</div>
 </body>
 
 
@@ -75,6 +79,13 @@
 </html>
 
 <style>
+    div.lastfmpanel {
+        border:2px solid white;
+        width: 20%;
+        position: absolute;
+        left: 25%;
+    }
+
     div.disqus2 {
         border: 2px solid rgb(255, 255, 255);
         text-align: center;
@@ -212,6 +223,13 @@
     })();
 </script>
 
-
+<script>
+    $('#lastFmWidget').lastfmNowPlaying({
+	apiKey: 'c838ec7bc661ecde6a3f27c62de94978YOUR-API-KEY',
+	members: ['Merulox']
+});
+</script>
 
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<script src="/scripts/vendor/jquery.js"></script>
+<script src="/scripts/plugins/lastfmnowplaying.js"></script>
