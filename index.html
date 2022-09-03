@@ -3,9 +3,9 @@
 
 <head>
     <title>about://merulox</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="https://raw.githubusercontent.com/Merulox/Merulox.github.io/main/ezgif-5-842abf1ff2.png">
     <meta name="google-site-verification" content="n99WFcCBPTlwSS43-UIkd6J2FPIbOKOtbL7z76wwixQ" />
+
 </head>
 
 
@@ -61,7 +61,7 @@
     <div class="disqus-panel">
         <div class="news"><h2>Comments<br><br></h2></div>
     <div id = spoiler-disqus style="display: none">
-        <div id="disqus_thread"></div>
+     
     </div>
     <div class=button><align=center><button title="Comments" type="button" onclick="if(document.getElementById('spoiler-disqus') .style.display=='none' ) {document.getElementById('spoiler-disqus') .style.display=''}else{document.getElementById('spoiler-disqus') .style.display='none'}">Show/Hide disqus</button></align><br><br></div>
     </div>
@@ -75,13 +75,34 @@
 <div class="lastfmlink">test</div>
 </div>
 
+    <div class=chat2-button><button id="chat2-button" title="Chat" type="button" onclick="if(document.getElementById('chat2') .style.display=='none' ) {document.getElementById('chat2') .style.display=''}else{document.getElementById('chat2') .style.display='none'}">Show/Hide Chat</button></div>
+
+<div class="chat2" id="chat2" style="display: none;">
+
+    <div><div id="disqus_thread"></div></div>
+    
+</div>
+
 </body>
 
 </html>
 
-</html>
-
 <style>
+    div.chat2-button {
+        bottom: 0%;
+        right: 0%;
+        position: fixed;
+        border: 2px solid black;
+    }
+    div.chat2 {
+        border: 2px solid white;
+        position: absolute;
+        height: 70%;
+        width: 40%;
+        left: 32.5%;
+        top: 19%;
+        background-color: rgba(0,0,0, 0.6);
+    }
     div.lastfmlink {
         position: relative;
 
@@ -132,9 +153,8 @@
     }
     div.disqus_thread {
 
-        float:right;
-        padding-top: 50%;
-        width: 15%;
+        position: relative;
+        top: 8%;
     }
 
     div.date {
@@ -259,8 +279,15 @@
 document.getElementById('lastfm').contentWindow.targetFunction();
 
 
-    </style>
+</style>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
+
+
+
+
     /**
     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
@@ -278,8 +305,12 @@ document.getElementById('lastfm').contentWindow.targetFunction();
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
     })();
+</script>
 
 
 
+
+<script>
+document.getElementById('chat2-button')n.click();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
