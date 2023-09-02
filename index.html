@@ -3,13 +3,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>merulox's website</title>
+    <title>merulox</title>
 </head>
 
 <html>
     
     <h1 align="center"><i>Merulox</i></h1>
-    <img src="https://i.imgur.com/7HRfTUy.jpg" height="250">
+    <img src="https://i.imgur.com/7HRfTUy.jpg" max-height="250">
     <p align="center"><i>obsessed with otaku culture</i></p>
 
     <p align="center"> <a href="./about/index.html">about</a> - <a href="./blog/index.html">blog</a> - <a href="./faq/index.html">faq</a> - <a href="./gear/index.html">gear</a> - <a href="./socials/index.html">socials</a> - <a href="./contact/index.html">contact me</a></p>
@@ -22,6 +22,8 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+        object-fit:contain;
+        max-height: 250px;
     }
     html {margin-top: 15%;}
     div.old {position: fixed;bottom: 1%;right: 1%;}
