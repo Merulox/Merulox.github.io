@@ -10,21 +10,21 @@
     (But change the script src URL to wherever you have this widget stored on your site!)
 
         <div id="c_widget"></div>
-        <script src="comment-widget.js"></script>
+        <script src="/comment-widget-dark/comment-widget.js"></script>
 
     Have fun! Bug reports are encouraged if you happen to run into any issues.
     - Ayano (https://virtualobserver.moe/)
 */
 
 // The values in this section are REQUIRED for the widget to work! Keep them in quotes!
-const s_stylePath = 'PATH HERE';
-const s_formId = 'ID HERE';
-const s_nameId = 'ID HERE';
-const s_websiteId = 'ID HERE';
-const s_textId = 'ID HERE';
-const s_pageId = 'ID HERE';
-const s_replyId = 'ID HERE';
-const s_sheetId = 'ID HERE';
+const s_stylePath = '/comment-widget-dark/comment-widget.css';
+const s_formId = '1FAIpQLScOQETm1S3d2WsKq6pEPEnoqOxgHeukq1cWaK6o-0MHy_HzPw';
+const s_nameId = '1640518598';
+const s_websiteId = '1131698460';
+const s_textId = '2050260506';
+const s_pageId = '647117922';
+const s_replyId = '615693169';
+const s_sheetId = '1gfLShSp5j1-aOyIAcqSY2k4xHkeIGVxF4exZBmRWK6o';
 
 // The values below are necessary for accurate timestamps, I've filled it in with EST as an example
 const s_timezone = -5; // Your personal timezone (Example: UTC-5:00 is -5 here, UTC+10:30 would be 10.5)
@@ -34,12 +34,12 @@ const s_dstStart = ['March', 'Sunday', 2, 2]; // Example shown is the second Sun
 const s_dstEnd = ['November', 'Sunday', 1, 2]; // Example shown is the first Sunday of November at 2:00 am
 
 // Misc - Other random settings
-const s_commentsPerPage = 5; // The max amount of comments that can be displayed on one page, any number >= 1 (Replies not counted)
-const s_maxLength = 500; // The max character length of a comment
-const s_maxLengthName = 16; // The max character length of a name
+const s_commentsPerPage = 15; // The max amount of comments that can be displayed on one page, any number >= 1 (Replies not counted)
+const s_maxLength = 1000; // The max character length of a comment
+const s_maxLengthName = 30; // The max character length of a name
 const s_commentsOpen = true; // Change to false if you'd like to close your comment section site-wide (Turn it off on Google Forms too!)
 const s_collapsedReplies = true; // True for collapsed replies with a button, false for replies to display automatically
-const s_longTimestamp = false; // True for a date + time, false for just the date
+const s_longTimestamp = true; // True for a date + time, false for just the date
 let s_includeUrlParameters = false; // Makes new comment sections on pages with URL parameters when set to true (If you don't know what this does, leave it disabled)
 const s_fixRarebitIndexPage = false; // If using Rarebit, change to true to make the index page and page 1 of your webcomic have the same comment section
 
@@ -51,7 +51,7 @@ const s_filteredWords = [ // Add words to filter by putting them in quotes and s
 ]
 
 // Text - Change what messages/text appear on the form and in the comments section (Mostly self explanatory)
-const s_widgetTitle = 'Leave a comment!';
+const s_widgetTitle = 'merulox\'s guestbook';
 const s_nameFieldLabel = 'Name';
 const s_websiteFieldLabel = 'Website (Optional)';
 const s_textFieldLabel = '';
