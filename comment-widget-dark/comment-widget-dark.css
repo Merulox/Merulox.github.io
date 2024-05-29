@@ -67,7 +67,7 @@
 }
 
 #c_widget button, #c_widget input[type=submit] {
-    padding: 1px;
+    padding: 4px;
     font-family: 'Courier New';
     text-decoration: none;
 	text-align: center;
@@ -135,8 +135,8 @@
 /* Comment section */
 .c-comment {
     margin-bottom: 15px;
-    padding: 10px;
-    border: 2px solid white;
+    padding: 4px;
+    border: 2px solid black;
     background-color: #2D0B52; 
 }
 .c-reply {
