@@ -26,7 +26,7 @@ const s_pageId = '647117922';
 const s_replyId = '615693169';
 const s_sheetId = '1gfLShSp5j1-aOyIAcqSY2k4xHkeIGVxF4exZBmRWK6o';
 
-// The values below are necessary for accurate timestamps, I've filled it in with EST as an example
+// The values below are necessary for acc/urate timestamps, I've filled it in with EST as an example
 const s_timezone = -5; // Your personal timezone (Example: UTC-5:00 is -5 here, UTC+10:30 would be 10.5)
 const s_daylightSavings = true; // If your personal timezone uses DST, set this to true
 // For the dates DST start and end where you live: [Month, Weekday, which number of that weekday, hour (24 hour time)]
