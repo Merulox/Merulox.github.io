@@ -127,12 +127,11 @@
 #c_replyingText {color: #5E2C49;}
 *\
 /* Comment section */
-/*.c-comment {
+.c-comment {
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px;
     background-color: rgba(255, 255, 255, .75);
-    border: 1px dashed #CE98FB;
     border-radius: 4px;
 }
 .c-reply {
@@ -140,7 +139,6 @@
     margin-bottom: 10px;
     padding: 10px;
     background-color: rgba(255, 255, 255, 1);
-    border: 1px dashed #CE98FB;
     border-radius: 4px;
 }
 .c-reply:last-child {margin-bottom: 0;}
@@ -154,19 +152,15 @@
 }
 .c-site {
     text-transform: lowercase;
-    color: #CE98FB;
 }
 .c-site:hover {color: #211F24;}
 .c-timestamp {
-    float: right;
-    opacity: 60%;
 }
 .c-text {
     margin: 0;
-    margin-top: 10px;
+    margin-top: 2px;
     padding: 0;
     text-align: justify;
-    color: #5E2C49;
 }
 *\
 /* Pagination */
@@ -179,4 +173,4 @@
 .c-paginationButton {
     margin-right: 4px;
     margin-left: 4px;
-} *\
+} 
