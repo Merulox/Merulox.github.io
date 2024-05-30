@@ -17,7 +17,7 @@
 */
 
 // The values in this section are REQUIRED for the widget to work! Keep them in quotes!
-const s_stylePath = "/comment-widget-dark/merulox-theme.css";
+const s_stylePath = 't-dark/comment-widget-pink.css';
 const s_formId = '1FAIpQLScOQETm1S3d2WsKq6pEPEnoqOxgHeukq1cWaK6o-0MHy_HzPw';
 const s_nameId = '1640518598';
 const s_websiteId = '1131698460';
@@ -26,7 +26,7 @@ const s_pageId = '647117922';
 const s_replyId = '615693169';
 const s_sheetId = '1gfLShSp5j1-aOyIAcqSY2k4xHkeIGVxF4exZBmRWK6o';
 
-// The values below are necessary for acc/urate timestamps, I've filled it in with EST as an example
+// The values below are necessary for accurate timestamps, I've filled it in with EST as an example
 const s_timezone = -5; // Your personal timezone (Example: UTC-5:00 is -5 here, UTC+10:30 would be 10.5)
 const s_daylightSavings = true; // If your personal timezone uses DST, set this to true
 // For the dates DST start and end where you live: [Month, Weekday, which number of that weekday, hour (24 hour time)]
@@ -409,7 +409,7 @@ function convertTimestamp(timestamp) {
     const timezoneDiff = (s_timezone * 60 + date.getTimezoneOffset()) * -1;
     let offsetDate = new Date(date.getTime() + timezoneDiff * 60 * 1000);
     if (s_daylightSavings) {offsetDate = isDST(offsetDate)}
-    return [offsetDate.toLocaleString(), offsetDate.toLocaleDateString()];
+    return [offsetDate.toISOString(), offsetDate.toLocaleDateString()];
 }
 // DST checker
 function isDST(date) {
@@ -418,7 +418,7 @@ function isDST(date) {
 
     const year = date.getFullYear();
     let startDate = new Date(year, dstStart[0], 1);
-    startDate = nthDayOfMonth(dstStart[1], dstStart[2], startDate, dstStart[3]).getTime();
+    startDate = nthDayOfMonth(dstStart[1], dstStart[2], startDate, dsttoLocaleStringStart[3]).getTime();
     let endDate = new Date(year, dstEnd[0], 1);
     endDate = nthDayOfMonth(dstEnd[1], dstEnd[2], endDate, dstEnd[3]).getTime();
     time = date.getTime();
@@ -487,7 +487,7 @@ function openReply(id) {
         c_replyInput.value = '';
         c_replyingText.style.display = 'none';
     }
-    link.click(); // Jump to the space to type
+    link.click(); // Jump to the space to typetoLocaleString
 }
 
 // Handle expanding replies (should only be accessible with collapsed replies enabled)
