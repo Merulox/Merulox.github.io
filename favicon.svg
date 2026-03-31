@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a7c3f"/>
+      <stop offset="100%" style="stop-color:#2d5a27"/>
+    </linearGradient>
+    <!-- bill texture pattern -->
+    <pattern id="bills" patternUnits="userSpaceOnUse" width="8" height="8" patternTransform="rotate(30)">
+      <rect width="8" height="8" fill="#3d6b35"/>
+      <line x1="0" y1="2" x2="8" y2="2" stroke="#2d5a27" stroke-width="0.5" opacity="0.6"/>
+      <line x1="0" y1="5" x2="8" y2="5" stroke="#5a8f52" stroke-width="0.3" opacity="0.5"/>
+      <line x1="2" y1="0" x2="2" y2="8" stroke="#2d5a27" stroke-width="0.3" opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <!-- Infinity shape: thick stroked path with fill trick using two paths -->
+  <!-- Outer shape -->
+  <path d="
+    M 50,25
+    C 47,16 40,8 28,8
+    C 14,8 4,16 4,25
+    C 4,34 14,42 28,42
+    C 40,42 47,34 50,25
+    C 53,16 60,8 72,8
+    C 86,8 96,16 96,25
+    C 96,34 86,42 72,42
+    C 60,42 53,34 50,25
+    Z"
+    fill="url(#bills)"
+    stroke="#1e3d1a"
+    stroke-width="1"
+  />
+
+  <!-- Inner cutouts for the two loops (holes) -->
+  <ellipse cx="28" cy="25" rx="11" ry="10" fill="#d8d4c4"/>
+  <ellipse cx="72" cy="25" rx="11" ry="10" fill="#d8d4c4"/>
+
+  <!-- Subtle highlight lines on the ring body -->
+  <path d="M 50,25 C 47,20 42,13 32,11" stroke="#6aaa5e" stroke-width="1.2" fill="none" opacity="0.5" stroke-linecap="round"/>
+  <path d="M 50,25 C 53,20 58,13 68,11" stroke="#6aaa5e" stroke-width="1.2" fill="none" opacity="0.5" stroke-linecap="round"/>
+</svg>
